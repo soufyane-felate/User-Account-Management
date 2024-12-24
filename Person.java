@@ -2,11 +2,12 @@ class Person
 {
     String name;
     int age;
-    Person(String name , int age)
-    {
-        this.name=name;
-        this.age=age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
+
 
     public java.lang.String getName() {
         return name;
@@ -24,11 +25,5 @@ class Person
         this.age = age;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
+
 }
