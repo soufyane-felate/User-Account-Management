@@ -7,8 +7,8 @@ public class User extends Person {
     private String email;
     private String password;
 
-    User(String name, int age, Role role, String email, String password) {
-        super(name, age);
+    User(String name, int age,String cin, Role role, String email, String password) {
+        super(name, age,cin);
         this.role = role;
         this.email = email;
         this.password = password;
@@ -42,9 +42,10 @@ public class User extends Person {
     @Override
     public String toString() {
         return "User{" +
+                "cin='" + cin + '\'' +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", role=" + getRole() +
+                ", role=" + role.getRolename() +
                 ", email='" + email + '\'' +
                 '}';
     }
